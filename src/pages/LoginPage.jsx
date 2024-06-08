@@ -84,9 +84,9 @@ const LoginPage = () => {
                             type="submit"
                             variant="contained"
                             sx={{
-                                backgroundColor: '#ff9800', // Portocaliu
+                                backgroundColor: '#ff9800',
                                 '&:hover': {
-                                    backgroundColor: '#fb8c00' // Portocaliu mai închis la hover
+                                    backgroundColor: '#fb8c00'
                                 },
                                 mt: 2
                             }}

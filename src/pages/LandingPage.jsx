@@ -54,45 +54,6 @@ const LandingPage = () => (
                     ))}
                 </Grid>
             </Box>
-
-            {/* Testimoniale */}
-            <Box sx={{ mb: 4 }}>
-                <Typography variant="h4" align="center" gutterBottom sx={{ fontFamily: 'Lora, serif', color: '#3f51b5' }}>
-                    Testimoniale
-                </Typography>
-                <Grid container spacing={4}>
-                    <Grid item xs={12} sm={4}>
-                        <Paper elevation={3} sx={{ padding: 2, backgroundColor: '#f5f5f5' }}>
-                            <Typography variant="body1" align="center">
-                                "O experiență de cumpărare extraordinară! Găsesc mereu ceea ce caut."
-                            </Typography>
-                            <Typography variant="subtitle2" align="center" sx={{ mt: 2, fontStyle: 'italic', color: '#3f51b5' }}>
-                                - Ana M.
-                            </Typography>
-                        </Paper>
-                    </Grid>
-                    <Grid item xs={12} sm={4}>
-                        <Paper elevation={3} sx={{ padding: 2, backgroundColor: '#f5f5f5' }}>
-                            <Typography variant="body1" align="center">
-                                "Prețuri foarte bune și livrare rapidă. Recomand cu încredere!"
-                            </Typography>
-                            <Typography variant="subtitle2" align="center" sx={{ mt: 2, fontStyle: 'italic', color: '#3f51b5' }}>
-                                - Bogdan R.
-                            </Typography>
-                        </Paper>
-                    </Grid>
-                    <Grid item xs={12} sm={4}>
-                        <Paper elevation={3} sx={{ padding: 2, backgroundColor: '#f5f5f5' }}>
-                            <Typography variant="body1" align="center">
-                                "Selecția de cărți este impresionantă. Mereu găsesc ceva nou și interesant."
-                            </Typography>
-                            <Typography variant="subtitle2" align="center" sx={{ mt: 2, fontStyle: 'italic', color: '#3f51b5' }}>
-                                - Cristina P.
-                            </Typography>
-                        </Paper>
-                    </Grid>
-                </Grid>
-            </Box>
         </Container>
     </div>
 );

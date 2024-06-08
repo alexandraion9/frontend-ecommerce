@@ -17,7 +17,7 @@ import OrderConfirmationPage from "./pages/OrderConfirmationPage";
 import OrdersListPage from "./adminPages/OrderListPage";
 
 const App = () => {
-    const [selectedTab, setSelectedTab] = useState('home'); // Initial tab
+    const [selectedTab, setSelectedTab] = useState('home');
 
     const handleChange = (event, newValue) => {
         setSelectedTab(newValue);

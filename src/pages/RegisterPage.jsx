@@ -19,7 +19,6 @@ const RegisterPage = () => {
     const handleRegister = async (event) => {
         event.preventDefault();
 
-        // Verifică dacă parola respectă cerințele
         if (!validatePassword(password)) {
             setPasswordError('Parola trebuie să conțină cel puțin 8 caractere, cel puțin o literă mare și cel puțin o cifră.');
             return;
@@ -38,9 +37,7 @@ const RegisterPage = () => {
             roles: selectedRole
         };
 
-        // Implement API call to register user using registrationData
         try {
-            // Send registrationData to the backend API
             const response = await fetch('http://localhost:8080/api/auth/signup', {
                 method: 'POST',
                 headers: {
@@ -52,11 +49,9 @@ const RegisterPage = () => {
             const responseData = await response.json();
 
             if (response.ok) {
-                // Handle successful registration (e.g., redirect to login page)
                 console.log('Registration successful:', responseData);
                 navigate('/login');
             } else {
-                // Handle registration errors (e.g., display error messages)
                 console.error('Registration failed:', responseData.message);
             }
         } catch (error) {
@@ -64,7 +59,6 @@ const RegisterPage = () => {
         }
     };
 
-    // Funcție pentru validarea parolei
     const validatePassword = (password) => {
         const passwordRegex = /^(?=.*[A-Z])(?=.*\d).{8,}$/;
         return passwordRegex.test(password);
@@ -188,9 +182,9 @@ const RegisterPage = () => {
                                 type="submit"
                                 variant="contained"
                                 sx={{
-                                    backgroundColor: '#ff9800', // Portocaliu
+                                    backgroundColor: '#ff9800',
                                     '&:hover': {
-                                        backgroundColor: '#fb8c00' // Portocaliu mai închis la hover
+                                        backgroundColor: '#fb8c00'
                                     },
                                     mt: 2
                                 }}
